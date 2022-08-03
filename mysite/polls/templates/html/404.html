@@ -1,0 +1,14 @@
+{% extends "html/home.html" %}
+{% load static %}
+
+{% block links %}
+<link href="{% static 'polls/css/404.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block title %}
+Whops...
+{% endblock %}
+
+{% block content %}
+<h1>404</h1>
+{% endblock %}

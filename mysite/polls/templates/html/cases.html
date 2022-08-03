@@ -1,0 +1,21 @@
+{% extends "html/home.html" %}
+{% load static %}
+
+{% block title %}
+    CaseOp
+{% endblock %}
+
+{% block links %}
+    <link href="{% static 'polls/css/cases.css'%}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block content %}
+    {% for i in cases %}
+    <section>
+        <a class = "case" href = "http://192.168.0.110:8000/{{i.case_name}}" type="s">
+            <article style = "background-image: url({{i.case_logo_url}}); background-position: center; background-size: cover; background-repeat: no-repeat;" ></article>
+            <h3>{{i.case_name}}</h2>
+        </a>
+    </section>
+    {%endfor%}
+{% endblock %}

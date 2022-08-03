@@ -1,0 +1,19 @@
+{% extends "html/home.html" %}
+{% load static %}
+
+{% block title %}
+too ez. funny page.
+{% endblock %}
+
+{% block links %}
+<link href="{% static 'polls/css/trap.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block content %}
+<h1>Watch one short video and get 1000$ !!! (Click to the black square)</h1>
+
+<video autoplay preload="auto" controls>
+    <source src="{% static 'polls/video/rickroll.mp4' %}" type="video/mp4">
+    Your browser is pos!
+</video> 
+{% endblock %}

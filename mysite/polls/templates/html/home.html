@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="{% static 'polls/css/home.css' %}" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}   {% endblock %}</title>
+        {% block links %} {% endblock %}
+    </head>
+    <body>
+        <header>
+            <a href="http://192.168.0.110:8000/" class="logo"></a>
+            <section class="guns_list">-----------------------------</section>
+            <section class="login"><a href= "http://192.168.0.110:8000/login">Login</a></section>
+        </header>
+        <hr class="top_line">
+        <main>
+            {% block content %}
+
+            {% endblock %}
+        </main>
+
+        <footer>
+            <hr>
+            <ul type = "none" class="contacts">
+                <li><a target="_blank" class="lol" href="https://steamcommunity.com/profiles/76561198258050027/">Steam</a></li>
+                <li><a target="_blank" href="https://youtube.com/shorts/ddMlpLzdlYU?feature=share">Youtube</a></li>
+                <li><a target="_blank" href="https://vk.com/perfomo">VK</a></li>
+                <li><a target="_blank" href="https://github.com/Perfomo">Git</a></li>
+                <li><a  href="http://192.168.0.110:8000/itsatrap">Free 1000$</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

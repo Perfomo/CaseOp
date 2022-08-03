@@ -1,0 +1,109 @@
+
+*
+{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: content-box;
+}
+
+body
+{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(9, 117, 43, 0.904); */
+    background-color: rgb(2, 34, 12);
+}
+
+header
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 80% 13%;   
+    width: 100%;
+    /* background-color: rgba(12, 79, 33, 0.75); */
+    background-color: rgb(2, 34, 12);
+    height: 6vw; 
+}
+
+header *
+{
+    position: relative;
+    height: 6vw;
+    /* border: 1px solid black; */
+    justify-content: center;
+    text-align: center;
+}
+
+footer
+{
+    display: block;
+    /* background-color: rgba(12, 79, 33, 0.9); */
+    background-color: rgb(2, 34, 12);
+    bottom: 0%;
+    position: fixed;
+    width: 100%;
+    height: 2vw;
+}
+
+footer hr
+{
+    color: rgb(22, 163, 67);
+    width: 92%;
+    position: relative;
+    
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.contacts
+{
+    line-height: 2vw;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+a:active, a:hover, a
+{
+    font-weight: bold;
+    text-decoration: none;
+    /* color: rgb(18, 168, 66); */
+    color: white;
+}
+
+.logo
+{
+    display: block;
+    position: relative;
+    background-image: url(../img/logo/logo1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.login
+{
+    position: relative;
+    display: block;
+    line-height: 6vw;
+}
+
+.login a
+{
+    border: none;
+}
+
+.top_line
+{
+    color: rgb(22, 163, 67);
+    width: 96%;
+    position: relative;
+    
+    margin-left: 2%;
+    margin-right: 2%;
+}
+

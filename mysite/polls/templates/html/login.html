@@ -1,0 +1,23 @@
+{% extends "html/home.html" %}
+{% load static %}
+
+{% block links %}
+<link href="{% static 'polls/css/login.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block title %}
+login
+{% endblock %}
+
+{% block content %}
+<section class="choice">
+    <article>Sign in</article>
+    <article>Sign up</article>
+</section>
+<form class="form" method="post" name="LoginForm">
+    <input type="text" name="UserName" placeholder="Name">
+    <input type="password" name="Password" placeholder="Password">
+    <input type="password" name="PasswordRe" placeholder="Password again">
+    <input type="submit" name="SubmitButtonLogin" value="Send">
+</form>
+{% endblock %}

@@ -1,0 +1,57 @@
+body
+{
+    position: relative;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: block;
+    height: 100vh;
+}
+
+header, footer
+{
+    background-color: #2f9832;
+}
+
+header
+{
+    height: 8vw;
+    display: grid;
+    grid-template-columns: 10% 70% 20%;
+}
+
+header *
+{
+    height: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo
+{
+    background-image: url(/home/perfomo/Documents/CaseOp/mysite/templates/img/logo1.jpg);
+    background-position: center;
+    background-size: contain;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.contacts
+{
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 0%;
+}
+
+footer
+{
+    /* top: 76.5vh; */
+    top: 100%;
+    position: relative;
+    width: 100%;
+}

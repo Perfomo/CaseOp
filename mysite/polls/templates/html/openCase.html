@@ -1,0 +1,28 @@
+{% extends "html/home.html" %}
+{% load static %}
+
+{% block title %}
+openCase
+{% endblock %}
+
+{% block links %}
+<link rel = "stylesheet" type = "text/css" href = "{% static 'polls/css/openCase.css' %}"> 
+{% endblock %}
+
+{% block content %}
+<section class="field">
+    <ul type = "none" class = "guns">
+        {% for i in guns %}
+            <li style="color: white;background-position: center; background-size: contain; background-repeat: no-repeat ;background-image: url('../../static/{{i.gun_url}}{{i.name}}.png')">  </li>
+        {%endfor%}
+    </ul>
+</section>
+
+<section class="items">
+    <ul type = "none" class = "guns_in_case">
+        {% for i in all_guns %}
+            <li class="list_guns_frames" style="background-image: url('../../static/{{i.gun_url}}{{i.name}}.png')">  </li>
+        {%endfor%}
+    </ul>
+</section>
+{% endblock %}

@@ -1,0 +1,102 @@
+.field
+{
+    left: 25%;
+    right: 25%;
+    top: 17vh;
+    position: relative;
+    height: 10vw;
+    width: 50%;
+    display: block;
+    background-color: black;
+    overflow: hidden;
+
+}
+
+.field::after
+{
+    content: '';
+    left: 50%;
+    top:-10vw;
+    position: relative;
+    display: block;
+    height: 10vw;
+    width: 1%;
+    background-color: red;
+}
+
+.guns
+{
+    position: relative;
+    height: 10vw;
+    width: 630%;
+    display: flex;
+    flex-flow: row nowrap;
+    animation: role linear forwards ;
+    animation-duration: 7s;
+}
+
+@keyframes role
+{
+    from{right: 0%;}
+    to{right:508%;}
+}
+
+.guns *
+{
+    top:0.5vw;
+    bottom: 0.5vw;
+    position: relative;
+    width: 19%;
+    height: 9vw;
+    background-color: rgb(12, 83, 35);
+}
+
+.guns:first-child
+{
+    margin-left: 1%;
+}
+
+.guns :not(:last-child)
+{
+    margin-right: 0.25%;
+}
+
+.items
+{
+    position: relative;
+    left: 20%;
+    right: 20;
+    top: 30vh;
+    position: relative;
+    width: 60%;
+    height: 100%;
+}
+
+.guns_in_case
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    position: relative;
+    justify-content: space-around;
+    grid-template-columns: 15% 15% 15% 15%;
+    padding-top: 5%;
+}
+
+.list_guns_frames
+{
+    background-color: rgb(12, 83, 35);
+    position: relative;
+    display: block;
+    color: white;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 7vw;
+}
+
+.list_guns_frames:not(:last-child)
+{
+    margin-bottom: 3vw;
+}
